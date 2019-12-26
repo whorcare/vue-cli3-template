@@ -1,0 +1,10 @@
+@import './config.scss';
+
+body {
+  font-family: $family;
+  min-height: 100vh;
+}
+
+#nprogress .bar {
+  height: 10px !important;
+}

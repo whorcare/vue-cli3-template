@@ -3,15 +3,25 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve --open --port 10086",
     "build": "vue-cli-service build",
+    "build:test": "vue-cli-service build --mode test --modern",
+    "build:testrep": "vue-cli-service build --mode test --modern -report",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.19.0",
+    "brotli-webpack-plugin": "^1.1.0",
     "core-js": "^3.4.3",
+    "em-cookie": "^1.1.1",
+    "em-underline": "^1.2.4",
+    "fastclick": "^1.0.6",
+    "postcss-pxtorem": "^4.0.1",
+    "vconsole-webpack-plugin": "^1.5.0",
     "vue": "^2.6.10",
     "vue-router": "^3.1.3",
-    "vuex": "^3.1.2"
+    "vuex": "^3.1.2",
+    "webpack-bundle-analyzer": "^3.6.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",
